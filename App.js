@@ -14,12 +14,14 @@ import SigninScreen from "./screens/SigninScreen";
 import {ScreenState} from "./context/ScreenState"
 import {ScreenContext} from "./context/screenContext"
 import Layout from "./Layout"
-import { AppNavigation } from "./navigation/AppNavigation";
+
 export default function App() {
+ 
   
   return (
-<AppNavigation/>
-    
+    <ScreenState>
+<Layout/>
+</ScreenState>
   );
 }
 

@@ -16,8 +16,10 @@ import {ScreenContext} from "./context/screenContext"
 import Search from "./screens/Search";
 
 export default function Layout() {
-  const {screenName,changeScreen}=useContext(ScreenContext)
+console.log("screenName1");
 
+  const {screenName}=useContext(ScreenContext)
+console.log("screenName");
 
   return (
 <View style={{flex:1}}>
